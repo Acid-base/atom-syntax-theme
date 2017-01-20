@@ -1,0 +1,25 @@
+.syntax--support {
+  &.syntax--class {
+    color: @yellow;
+  }
+
+  &.syntax--function  {
+    color: @green;
+    // &.syntax--builtin {
+    //     color: @orange;
+    // }
+
+    &.syntax--any-method {
+      color: @blue;
+    }
+  }
+  &.syntax--property-name {
+      color: @purple;
+  }
+  &.syntax--primitive {
+      color:  @light-gray;
+  }
+  &.syntax--constant.syntax--property-value {
+      color: @orange;
+  }
+}

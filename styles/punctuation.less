@@ -1,0 +1,68 @@
+.syntax--punctuation {
+  &.syntax--definition {
+    &.syntax--comment {
+      color: @light-gray;
+    }
+    &.syntax--block {
+        color: @fg3;
+    }
+
+    &.syntax--string {
+        color: @orange;
+    }
+    &.syntax--variable,
+    &.syntax--parameters,
+    &.syntax--array {
+      color: @syntax-text-color;
+    }
+
+    &.syntax--heading,
+    &.syntax--identity,
+    &.syntax--tag {
+      color: @blue;
+    }
+
+    &.syntax--bold {
+      color: @light-orange;
+      font-weight: bold;
+    }
+
+    &.syntax--italic {
+      color: @purple;
+      font-style: italic;
+    }
+    &.syntax--keyword {
+        color: @red;
+    }
+    &.syntax--bracket.syntax--curly.syntax--js {
+        color: @fg3;
+    }
+  }
+  &.syntax--decorator {
+      color: @green;
+  }
+
+  &.syntax--comma,
+  &.syntax--statement {
+      color: @fg3;
+  }
+
+  &.syntax--parameters.syntax--bracket,
+  &.syntax--arguments.syntax--bracket,
+  &.syntax--parameters.syntax--begin,
+  &.syntax--parameters.syntax--end {
+      color: @fg3;
+  }
+  // &.syntax--begin,
+  // &.syntax--end {
+  //     color: @yellow;
+  // }
+  &.syntax--section.syntax--embedded {
+    // color: darken(@red, 10%);
+  }
+
+}
+// .syntax--class.syntax--instance + .syntax--brace.syntax--round,
+// .syntax--brace.syntax--round + .syntax--brace.syntax--round {
+//     color: @yellow;
+// }

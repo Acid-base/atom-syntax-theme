@@ -1,0 +1,29 @@
+.syntax--constant {
+  color: @fg2;
+
+  &.syntax--character.syntax--escape {
+    color: @cyan;
+  }
+
+  &.syntax--numeric {
+    color: @cyan;
+    &.syntax--css {
+        color: @green;
+    }
+  }
+
+  &.syntax--other.syntax--color {
+    color: @cyan;
+  }
+
+  &.syntax--other.syntax--symbol {
+    color: @green;
+  }
+  &.syntax--property-value.syntax--css {
+      color: @orange;
+  }
+  &.syntax--null {
+      color: @yellow;
+  }
+
+}

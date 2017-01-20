@@ -1,0 +1,29 @@
+.syntax--keyword {
+  color: @red;
+  color: @blue;
+
+  &.syntax--control {
+    color: @red;
+    // color: @blue;
+    // &.syntax--at-rule.syntax--import {
+    //     color: @green;
+    // }
+
+  }
+
+  &.syntax--operator {
+    color: @fg2;
+  }
+
+  &.syntax--other.syntax--special-method {
+    color: @blue;
+  }
+
+  &.syntax--other.syntax--unit {
+    color: @green;
+  }
+  &.syntax--typeof,
+  &.syntax--new {
+      color: @blue;
+  }
+}

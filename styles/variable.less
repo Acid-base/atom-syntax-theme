@@ -1,0 +1,20 @@
+.syntax--variable {
+  color: @fg1;
+
+  // &.syntax--interpolation {
+  //   color: darken(@red, 10%);
+  // }
+
+  &.syntax--parameter.syntax--function {
+    color: @syntax-text-color;
+  }
+  &.syntax--this {
+      color: @blue;
+  }
+  &.syntax--property {
+      color: @purple;
+  }
+  &.syntax--language {
+      color: @blue;
+  }
+}
