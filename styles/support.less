@@ -1,25 +1,32 @@
 .syntax--support {
-  &.syntax--class {
-    color: @yellow;
-  }
-
-  &.syntax--function  {
-    color: @green;
-    // &.syntax--builtin {
-    //     color: @orange;
-    // }
-
-    &.syntax--any-method {
-      color: @blue;
+    &.syntax--class {
+        color: @yellow;
     }
-  }
-  &.syntax--property-name {
-      color: @purple;
-  }
-  &.syntax--primitive {
-      color:  @light-gray;
-  }
-  &.syntax--constant.syntax--property-value {
-      color: @orange;
-  }
+
+    &.syntax--function {
+        // color: @orange;
+        color: @green;
+        // }
+        // &.syntax--builtin {
+        //     color: @orange;
+        // }
+        &.syntax--any-method {
+            color: @blue;
+        }
+        &.syntax--scss {
+          color: @orange;
+        }
+    }
+
+    &.syntax--property-name {
+        color: @purple;
+    }
+
+    &.syntax--primitive {
+        color: @light-gray;
+    }
+
+    &.syntax--constant.syntax--property-value {
+        color: @orange;
+    }
 }

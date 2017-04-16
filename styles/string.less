@@ -1,19 +1,24 @@
 .syntax--string {
-  color: @orange;
+    color: @orange;
 
+    &.syntax--regexp {
+        color: @cyan;
 
-  &.syntax--regexp {
-    color: @cyan;
-
-    .syntax--source.syntax--ruby.syntax--embedded {
-      color: @orange;
+        .syntax--source.syntax--ruby.syntax--embedded {
+            color: @orange;
+        }
     }
-  }
 
-  &.syntax--other.syntax--link {
-    color: @red;
-  }
-  // &.syntax--double.syntax--json {
-  //     color: @purple;
-  // }
+    &.syntax--other.syntax--link {
+        color: @red;
+    }
+    // &.syntax--double.syntax--json {
+    //     color: @purple;
+    // }
+    &.syntax--quoted {
+        text-decoration: none;
+    }
+}
+span.syntax--string.syntax--quoted.syntax--single.syntax--ts {
+    text-decoration: none;
 }

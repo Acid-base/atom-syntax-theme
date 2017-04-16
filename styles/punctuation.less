@@ -1,4 +1,8 @@
 .syntax--punctuation {
+    &.syntax--function,
+    &.syntax--separator {
+        color: @fg3;
+    }
   &.syntax--definition {
     &.syntax--comment {
       color: @light-gray;
@@ -36,6 +40,9 @@
     }
     &.syntax--bracket.syntax--curly.syntax--js {
         color: @fg3;
+    }
+    &.syntax--modules.syntax--js {
+      color: @fg3;
     }
   }
   &.syntax--decorator {

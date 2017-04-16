@@ -2,6 +2,9 @@
   &.syntax--name.syntax--function
   {
     color: @green;
+    &.syntax--constructor.syntax--js {
+      color: @blue;
+    }
   }
   &.syntax--name.syntax--type {
     color: @light-orange;
@@ -26,8 +29,12 @@
   }
 
   &.syntax--name.syntax--tag {
-    color: @blue;
+    color: @yellow;
+    // color: @red;
     // text-decoration: underline;
+    &.syntax--reference {
+        color: @light-orange;
+    }
   }
 
   &.syntax--other.syntax--attribute-name {
