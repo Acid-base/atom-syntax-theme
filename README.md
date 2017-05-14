@@ -1,4 +1,4 @@
-# brackets-syntax theme
+# atom-syntax theme
 
 A short description of your theme.
 
